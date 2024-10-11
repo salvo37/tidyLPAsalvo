@@ -1,4 +1,4 @@
-#' Compare latent profile models
+se#' Compare latent profile models
 #'
 #' Takes an object of class 'tidyLPA', containing multiple latent profile models
 #' with different number of classes or model specifications, and helps select
@@ -75,7 +75,7 @@ compare_solutions <- function(x, statistics = "BIC") {
 #' @method print bestLPA
 #' @export
 print.bestLPA <- function(x, digits = 3, na.print = "", ...){
-    cat("Compare tidyLPA solutions:\n\n")
+    cat("Compare tidyLPA solutions per esempio:\n\n")
     stats <- x$statistics
     if("Warnings" %in% names(x$fits)){
         fit_cols <- c("Model", "Classes", stats, "Warnings")
